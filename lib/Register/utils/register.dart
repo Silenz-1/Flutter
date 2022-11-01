@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project/Register/utils/buttons/login.dart';
 import 'package:project/Register/utils/passwordFields/p_fields.dart';
-import 'package:project/Register/utils/TextFields/T_fields.dart';
+import 'package:project/Register/utils/textFields/t_fields.dart';
 import 'package:project/Register/utils/buttons/signup.dart';
 
 
@@ -21,31 +21,33 @@ class _RegisterFormState extends State<RegisterForm> {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
-          child: Column(
-            children: const [
-              Text('SIGN UP', 
-                style: TextStyle(
-                  fontSize: 28, 
-                  fontWeight: FontWeight.bold
+          child: SingleChildScrollView(
+            child: Column(
+              children: const [
+                Text('SIGN UP', 
+                  style: TextStyle(
+                    fontSize: 28, 
+                    fontWeight: FontWeight.bold
+                  ),
                 ),
-              ),
-
-              SizedBox(height: 24), 
-              
-              TextFields(),
-
-                SizedBox(height: 20),
-
-              PasswordFields(),
-
-                SizedBox(height: 20),
-
-              SignupButton(),
-
-                SizedBox(height: 20),
-
-              LoginButton()
-            ],
+            
+                SizedBox(height: 24), 
+                
+                TextFields(),
+            
+                  SizedBox(height: 20),
+            
+                PasswordFields(),
+            
+                  SizedBox(height: 20),
+            
+                SignupButton(),
+            
+                  SizedBox(height: 20),
+            
+                LoginButton()
+              ],
+            ),
           ),
         )
       )

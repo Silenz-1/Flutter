@@ -31,7 +31,7 @@ class _PasswordFieldsState extends State<PasswordFields> {
       children: [
         //Password field
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 250.0),
+          padding: const EdgeInsets.symmetric(horizontal: 25.0),
           child: Container(
             decoration: BoxDecoration(
               color: Colors.white,
@@ -62,7 +62,7 @@ class _PasswordFieldsState extends State<PasswordFields> {
         const SizedBox(height: 20),
         //Confirm Password Field
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 250.0),
+          padding: const EdgeInsets.symmetric(horizontal: 25.0),
           child: Container(
             decoration: BoxDecoration(
               color: Colors.white,
