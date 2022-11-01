@@ -9,7 +9,7 @@ class TextFields extends StatelessWidget {
       children: [
         //First Name field
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 250.0),
+          padding: const EdgeInsets.symmetric(horizontal: 25.0),
           child: Container(
             decoration: BoxDecoration(
               color: Colors.white,
@@ -33,7 +33,7 @@ class TextFields extends StatelessWidget {
         const SizedBox(height: 20),
         //Last Name Field
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 250.0),
+          padding: const EdgeInsets.symmetric(horizontal: 25.0),
           child: Container(
             decoration: BoxDecoration(
               color: Colors.white,
@@ -57,7 +57,7 @@ class TextFields extends StatelessWidget {
         const SizedBox(height: 20),
         //Email Field
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 250.0),
+          padding: const EdgeInsets.symmetric(horizontal: 25.0),
           child: Container(
             decoration: BoxDecoration(
               color: Colors.white,
