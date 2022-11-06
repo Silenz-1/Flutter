@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:project/login/shared/components/components.dart';
+import '../utils/components/widgets.dart';
 import '../Register/register.dart';
 
 class LoginForm extends StatefulWidget {

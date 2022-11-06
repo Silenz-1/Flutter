@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:project/login/login.dart';
+import 'package:project/Login/login.dart';
 
 class LoginButton extends StatelessWidget {
   const LoginButton({super.key});
@@ -24,7 +24,7 @@ class LoginButton extends StatelessWidget {
                 )
               );
             },
-            
+
             child: Text(
               'Login',
               style: TextStyle(

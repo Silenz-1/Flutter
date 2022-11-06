@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project/Register/buttons/login.dart';
 import 'package:project/Register/buttons/signup.dart';
-import 'utils/components/widget.dart';
+import '../utils/components/widgets.dart';
 
 
 class RegisterForm extends StatefulWidget {
@@ -93,13 +93,3 @@ class _RegisterFormState extends State<RegisterForm> {
     );
   }
 }
-
-
-/*
-const Text('SIGN UP', 
-                  style: TextStyle(
-                    fontSize: 28, 
-                    fontWeight: FontWeight.bold
-                  ),
-                ), 
-*/
