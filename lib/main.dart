@@ -1,24 +1,17 @@
 import 'package:flutter/material.dart';
 import 'login/login.dart';
 
-
-
-
-
-
-
 void main() {
-    runApp( Myapp());
-  }
+  runApp(const MyApp());
+}
 
-
-
-class Myapp extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
   @override
-  Widget build (BuildContext context) {
-    return MaterialApp(
+  Widget build(BuildContext context) {
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: LoginForm(),
     );
   }
 }

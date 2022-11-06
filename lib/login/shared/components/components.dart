@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
 
-Widget defaultTextFormField ({
+Widget defaultTextFormField({
   required TextEditingController controller,
   required TextInputType type,
   ValueChanged? onSubmit,
@@ -10,8 +9,8 @@ Widget defaultTextFormField ({
   required String label,
   required Icon prefixIcon,
   IconData? suffix,
-   double radius = 25.0,
-   bool obscure = false,
+  double radius = 25.0,
+  bool obscure = false,
   VoidCallback? suffixPressed,
 
 }) => TextFormField(
@@ -41,19 +40,16 @@ Widget defaultTextFormField ({
 
 );
 
-Widget defaultText ({
+Widget defaultText({
   required String text,
   FontWeight weight = FontWeight.bold,
   required double size,
   required Color color,
-
-
 }) => Text(
-text,
-style: TextStyle(
-fontWeight: weight,
-fontSize: size,
-color: color,
-
-),
+  text,
+  style: TextStyle(
+    fontWeight: weight,
+    fontSize: size,
+    color: color,
+  ),
 );

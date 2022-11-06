@@ -1,18 +1,17 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
-import 'package:getwidget/getwidget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:project/login/shared/components/components.dart';
+import '../Register/register.dart';
 
-import '../Register/utils/register.dart';
-// ignore_for_file: prefer_const_constructors
+class LoginForm extends StatefulWidget {
+  const LoginForm({super.key});
 
-class LoginScreen extends StatefulWidget {
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<LoginForm> createState() => _LoginFormState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _LoginFormState extends State<LoginForm> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   var formkey = GlobalKey<FormState>();
@@ -36,23 +35,25 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Container(
+                SizedBox(
                   height: 120.0,
                   child: Image(
-                      image: NetworkImage(
-                          'https://raw.githubusercontent.com/gamzegurcan/Flutter-Login-Register-UI/master/asset/images/loginill.png')),
+                    image: NetworkImage(
+                      'https://raw.githubusercontent.com/gamzegurcan/Flutter-Login-Register-UI/master/asset/images/loginill.png'
+                    )
+                  ),
                 ),
-                SizedBox(
-                  height: 20.0,
-                ),
+
+                SizedBox(height: 20.0),
+
                 defaultText(
                   text: 'LOGIN',
                   size: 35.0,
                   color: Colors.black,
                 ),
-                SizedBox(
-                  height: 20.0,
-                ),
+
+               SizedBox(height: 20.0),
+               
                 Padding(
                   padding: const EdgeInsetsDirectional.only(
                     start: 20.0,
@@ -249,18 +250,20 @@ class _LoginScreenState extends State<LoginScreen> {
                         color: Colors.black,
                       ),
                       TextButton(
-                        onPressed: () {
-                          setState(() {
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (BuildContext context) {
+                        onPressed: () {                         
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                            builder: (BuildContext context) {
                               return const RegisterForm();
-                            }));
-                          });
+                              }
+                            )
+                          );
                         },
                         child: defaultText(
-                            text: 'Register Now',
-                            size: 13.0,
-                            color: Color.fromRGBO(19, 21, 221, 1)),
+                          text: 'Register Now',
+                          size: 13.0,
+                          color: Color.fromRGBO(19, 21, 221, 1)
+                        ),
                       ),
                     ],
                   ),
